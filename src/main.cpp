@@ -22,9 +22,9 @@ ButtonConfig resetConfig, pauseConfig;
 AceButton resetButton(&resetConfig), pauseButton(&pauseConfig);
 
 // pin setup
-const int RESET_PIN = D5;
-const int PAUSE_PIN = D6;
-const int buzzer = D4;
+const int RESET_PIN = D4;
+const int PAUSE_PIN = D5;
+const int buzzer = D6;
 
 // init globals
 int final_countdown = 0;
