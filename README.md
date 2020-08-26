@@ -16,6 +16,14 @@ Any substitution components should work but you'll need to mess with the pinouts
 
 I designed a PCB for this and eventually I'll clean it up for release.
 
+Important note on design: the knockoff SSD1306 I used has four pins in THIS ORDER: ```GND VCC SCL SDA```
+Some versions of this board use a different order and pins will need to be changed in the build for those changes. If GND and VCC are swapped, the board I've designed will not work. Be aware of the pin order.
+
+Features:
+* Press 'RESTART' button to restart the countdown, or to start it after first powering on/rebooting
+* Hold 'RESTART' button to reboot device
+* Press 'PAUSE' button to pause countdown
+
 Loose roadmap:
 
 * Add wifi sync to game agent for automatic resets
